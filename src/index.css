@@ -1,0 +1,13 @@
+/* index.css */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+@font-face {
+  font-family: "Nevis";
+  src: url("/src/Assets/font/nevis.ttf") format("truetype");
+}
+
+body {
+  font-family: "Nevis", sans-serif;
+}
+
+/* Social Media Icons */

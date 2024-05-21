@@ -1,0 +1,27 @@
+[
+  {
+    "title": "LinkedIn",
+    "LinkTo": "https://www.linkedin.com/in/moideenmashad",
+    "iconId": "linkedin"
+  },
+  {
+    "title": "GitHub",
+    "LinkTo": "https://github.com/moideeenmashad",
+    "iconId": "github"
+  },
+  {
+    "title": "Email",
+    "LinkTo": "mailto:moideenmashad@gmail.com",
+    "iconId": "email"
+  },
+  {
+    "title": "Stack Overflow",
+    "LinkTo": "https://stackoverflow.com/users/moideen-mashad",
+    "iconId": "stackoverflow"
+  },
+  {
+    "title": "Instagram",
+    "LinkTo": "https://instagram.com/mvshxd",
+    "iconId": "instagram"
+  }
+]
