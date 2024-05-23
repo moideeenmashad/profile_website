@@ -1,0 +1,89 @@
+p {
+  margin: 0;
+  margin: 0;
+}
+.introduction_bg {
+  background-size: cover;
+  background-image: url(../Assets/img/introduction_sm_bg.jpg);
+  margin-top: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 60px;
+  margin: 0;
+}
+.category_title {
+  margin: 0;
+  font-size: x-large;
+}
+.para {
+  margin: 16px 0;
+  font-size: 16px;
+}
+/* icons */
+.social_media {
+  display: flex;
+}
+.social_media_icon {
+  color: black;
+  margin-left: 8px;
+  font-size: larger;
+}
+.card_banner {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 8px;
+}
+.card_body {
+  padding: 10px;
+}
+.card_banner {
+  width: fit-content;
+}
+.card_banner_title {
+  padding: 0;
+  margin: 0;
+  color: #58a9f5;
+  font-size: xx-large;
+}
+.card_title {
+  font-weight: bold;
+  font-size: large;
+}
+.card_subtitle {
+  font-weight: 10px !important;
+  font-size: large;
+}
+
+.text-lg{
+    font-size: xx-large !important;
+}
+/* Media Screens */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 40px !important;
+  }
+  .introduction_bg {
+    height: 90vh;
+    background-image: url(../Assets/img/introduction_sm_bg.jpg) !important ;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .introduction_bg {
+    height: 60vh;
+    background-image: url(../Assets/img/introduction_md_bg.jpg) !important ;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .introduction_bg {
+    height: 100vh;
+    background-image: url(../Assets/img/introduction-bg.jpg) !important;
+  }
+}

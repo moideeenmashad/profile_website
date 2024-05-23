@@ -29,6 +29,10 @@ const Navbar = () => {
               Moideen Mashad
             </a>
           </div>
+
+          <div className="d-md-block d-lg-none">
+            <DarkModeToggle />
+          </div>
           <NavbarToggler />
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav ms-auto">
@@ -45,12 +49,15 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+            <div className="d-none d-lg-block">
+              <DarkModeToggle />
+            </div>
+
             <ul className="navbar-nav  d-none d-lg-flex">
               <li className="nav-item">
                 <ContactButton />
               </li>
             </ul>
-            <DarkModeToggle />
           </div>
         </div>
       </nav>
