@@ -4,6 +4,7 @@ import "./Navbar.css";
 import ContactButton from "../../Components/Buttons/ContactButton";
 import Profile_img from "../../Assets/img/profile.jpg";
 import NavbarToggler from "../../Components/Buttons/NavbarToggler";
+import DarkModeToggle from "../../Components/Dark_Mode/DarkModeToggle";
 
 const Navbar = () => {
   const navItems = [
@@ -49,6 +50,7 @@ const Navbar = () => {
                 <ContactButton />
               </li>
             </ul>
+            <DarkModeToggle />
           </div>
         </div>
       </nav>

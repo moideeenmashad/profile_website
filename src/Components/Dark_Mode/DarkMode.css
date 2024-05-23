@@ -1,0 +1,10 @@
+@import "./_variables.scss";
+
+.dark-mode {
+  color: #ffffff;
+}
+
+.light-mode {
+  color: #1a1a1a;
+}
+

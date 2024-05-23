@@ -1,12 +1,12 @@
 import React from "react";
 import Introduction from "./Introduction";
-import Loader from "../Components/Loader/Loader";
+import ScrollUp from "../Components/Scroll_To_Top/ScrollUp";
 
 const Main = () => {
   return (
     <>
-      <Loader />
       <Introduction />
+      <ScrollUp />
     </>
   );
 };
