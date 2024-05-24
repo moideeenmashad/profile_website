@@ -10,7 +10,7 @@ const ScrollUp = () => {
       top={20}
       component={
         <div className="icon-wrapper">
-          <IoArrowUp className="icon" />
+          <IoArrowUp className="icon_up" />
         </div>
       }
       className="scroll-to-top"

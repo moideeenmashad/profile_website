@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: none !important;
 }
 
 .icon-wrapper {
@@ -15,7 +16,7 @@
   height: 100%;
 }
 
-.icon {
+.icon_up {
   font-size: 24px;
   color: #ffffff;
 }

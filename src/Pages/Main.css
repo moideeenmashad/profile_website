@@ -4,7 +4,6 @@ p {
 }
 .introduction_bg {
   background-size: cover;
-  background-image: url(../Assets/img/introduction_sm_bg.jpg);
   margin-top: 0 !important;
   display: flex;
   justify-content: center;
@@ -56,8 +55,8 @@ p {
   font-weight: 10px !important;
   font-size: large;
 }
-/* Media Screens */
 
+/* Media Screens */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .title {
@@ -65,21 +64,17 @@ p {
   }
   .introduction_bg {
     height: 90vh;
-    background-image: url(../Assets/img/introduction_sm_bg.jpg) !important ;
   }
 }
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 900px) {
   .introduction_bg {
     height: 60vh;
-    background-image: url(../Assets/img/introduction_md_bg.jpg) !important ;
   }
 }
-
+/* Medium devices (landscape tablets, 1200 and up) */
 @media only screen and (min-width: 1200px) {
   .introduction_bg {
     height: 100vh;
-    background-image: url(../Assets/img/introduction-bg.jpg) !important;
   }
 }
