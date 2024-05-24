@@ -15,7 +15,7 @@ const Introduction = () => {
   return (
     <div className="introduction_bg">
       <div className="container sm_container_mg">
-        <div className="row">
+        <div className="row  align-items-center">
           <div className="col-12 col-md-12 col-lg-6">
             <h1 className="title">{userData && userData.name}</h1>
             <h6 className="category_title">{userData && userData.job_role}</h6>
@@ -46,7 +46,12 @@ const Introduction = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-12 col-lg-6 d-none d-lg-block"></div>
+          <div className="col-12 col-md-12 col-lg-6 d-none d-lg-block">
+            <div className="card">
+              <div className="card-body">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
