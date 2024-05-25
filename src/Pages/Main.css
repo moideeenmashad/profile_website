@@ -55,7 +55,18 @@ p {
   font-weight: 10px !important;
   font-size: large;
 }
+/* page 404 */
+.page404_container {
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.http_respond_text {
+  font-size: 100px;
+}
 /* Media Screens */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

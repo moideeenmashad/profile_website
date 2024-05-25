@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import "./Main.css";
 import DownloadButton from "../Components/Buttons/DownloadButton";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -48,8 +47,7 @@ const Introduction = () => {
           </div>
           <div className="col-12 col-md-12 col-lg-6 d-none d-lg-block">
             <div className="card">
-              <div className="card-body">
-              </div>
+              <div className="card-body"></div>
             </div>
           </div>
         </div>
