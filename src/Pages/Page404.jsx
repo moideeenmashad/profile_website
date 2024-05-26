@@ -7,10 +7,10 @@ import BackToHome from "../Components/Buttons/BackToHome";
 const Page404 = () => {
   return (
     <>
+      <Navbar />
       <div className="page404_body">
-        <Navbar />
         <div className="page404_container">
-          <div className="page404_content p-3">
+          <div className="page404_content">
             <h1 className="http_respond_title">404</h1>
             <p className="http_respond_sub_title">Page Not Found</p>
             <p className="http_respond_description_text">

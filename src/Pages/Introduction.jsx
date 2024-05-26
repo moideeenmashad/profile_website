@@ -46,9 +46,9 @@ const Introduction = () => {
             </div>
           </div>
           <div className="col-12 col-md-12 col-lg-6 d-none d-lg-block">
-            <div className="card">
+            {/* <div className="card">
               <div className="card-body"></div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

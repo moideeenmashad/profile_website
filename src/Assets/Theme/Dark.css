@@ -7,8 +7,8 @@
 }
 
 .dark-mode .btn_primary {
-  position: relative;
-  border: 2px solid #ffffff;
+  position: relative !important;
+  border: 2px solid #ffffff !important;
 }
 .dark-mode .btn_primary:hover {
   color: #1a1a1a;
