@@ -69,14 +69,25 @@ p {
   align-items: center;
   height: 100%;
 }
-
 .http_respond_title {
+  margin: 0;
+  padding: 0;
   font-size: 100px;
   text-align: center;
 }
 .http_respond_sub_title {
+  margin-top: 16px;
   font-size: 26px;
   text-align: center;
+}
+.http_respond_description_text {
+  margin-top: 16px;
+}
+.buttons {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Media Screens */

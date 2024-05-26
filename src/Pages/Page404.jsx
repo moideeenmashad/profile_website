@@ -2,6 +2,7 @@ import React from "react";
 import "../Assets/Theme/Dark.css";
 import "./Main.css";
 import Navbar from "../Layouts/Navbar/Navbar";
+import BackToHome from "../Components/Buttons/BackToHome";
 
 const Page404 = () => {
   return (
@@ -9,12 +10,15 @@ const Page404 = () => {
       <div className="page404_body">
         <Navbar />
         <div className="page404_container">
-          <div className="page404_content">
+          <div className="page404_content p-3">
             <h1 className="http_respond_title">404</h1>
             <p className="http_respond_sub_title">Page Not Found</p>
             <p className="http_respond_description_text">
               We're sorry, but the page you are looking for does not exist.
             </p>
+            <div className="buttons">
+              <BackToHome />
+            </div>
           </div>
         </div>
       </div>
