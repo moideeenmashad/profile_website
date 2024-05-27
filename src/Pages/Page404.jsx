@@ -11,9 +11,9 @@ const Page404 = () => {
       <div className="page404_body">
         <div className="page404_container">
           <div className="page404_content">
-            <h1 className="http_respond_title">404</h1>
-            <p className="http_respond_sub_title">Page Not Found</p>
-            <p className="http_respond_description_text">
+            <h1 className="http_respond_title text-color">404</h1>
+            <p className="http_respond_sub_title text-color">Page Not Found</p>
+            <p className="http_respond_description_text text-color">
               We're sorry, but the page you are looking for does not exist.
             </p>
             <div className="buttons">

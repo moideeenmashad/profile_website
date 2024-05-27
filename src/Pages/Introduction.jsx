@@ -16,9 +16,9 @@ const Introduction = () => {
       <div className="container sm_container_mg">
         <div className="row align-items-center">
           <div className="col-12 col-md-12 col-lg-6">
-            <h1 className="title">{userData && userData.name}</h1>
-            <h6 className="category_title">{userData && userData.job_role}</h6>
-            <p className="para">{userData && userData.description}</p>
+            <h1 className="title text-color">{userData && userData.name}</h1>
+            <h6 className="category_title text-color">{userData && userData.job_role}</h6>
+            <p className="para text-color">{userData && userData.description}</p>
             <div className="d-flex">
               <DownloadButton />
               <div className="social_media mx-2">

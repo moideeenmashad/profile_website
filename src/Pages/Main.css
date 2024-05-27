@@ -76,12 +76,12 @@ h1 {
 .http_respond_title {
   margin: 0;
   padding: 0;
-  font-size: 60px;
+  font-size: 100px;
   text-align: center;
 }
 .http_respond_sub_title {
   margin-top: 16px;
-  font-size: x-large;
+  font-size: 26px;
   text-align: center;
 }
 .http_respond_description_text {

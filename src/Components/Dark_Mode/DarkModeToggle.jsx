@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../../Assets/Theme/Dark.css";
 import { IoSunny } from "react-icons/io5";
 import { FaMoon } from "react-icons/fa";
@@ -6,9 +6,9 @@ import { FaMoon } from "react-icons/fa";
 const DarkModeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  useEffect(() => {
-    document.body.classList.add("light-mode");
-  }, []);
+  // useEffect(() => {
+  //   document.body.classList.add("light-mode");
+  // }, []);
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
