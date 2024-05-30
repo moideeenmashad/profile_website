@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import "./Navbar.css";
 import ContactButton from "../../Components/Buttons/ContactButton";
 import Profile_img from "../../Assets/img/profile.jpg";
@@ -9,8 +10,8 @@ import DarkModeToggle from "../../Components/Dark_Mode/DarkModeToggle";
 const Navbar = () => {
   const navItems = [
     { navitem: "Home", LinkTo: "/", className: "nav-item" },
-    { navitem: "About", LinkTo: "/about", className: "nav-item" },
-    { navitem: "Projects", LinkTo: "/projects", className: "nav-item" },
+    { navitem: "About", LinkTo: "aboutMe", className: "nav-item" },
+    { navitem: "Projects", LinkTo: "projects", className: "nav-item" },
     { navitem: "Blog", LinkTo: "/blog", className: "nav-item" },
     { navitem: "contact", LinkTo: "/contact", className: "nav-item d-lg-none" },
   ];
@@ -40,14 +41,25 @@ const Navbar = () => {
             <ul className="navbar-nav ms-auto">
               {navItems.map((item, index) => (
                 <li key={index} className={item.className}>
-                  <NavLink
-                    to={item.LinkTo}
-                    className="nav-link text-center"
-                    activeClassName="active"
-                    exact
-                  >
-                    {item.navitem}
-                  </NavLink>
+                  {item.navitem === "About" || item.navitem === "Projects" ? (
+                    <Link
+                      to={item.LinkTo}
+                      smooth={true}
+                      duration={100}
+                      className="nav-link text-center"
+                    >
+                      {item.navitem}
+                    </Link>
+                  ) : (
+                    <NavLink
+                      to={item.LinkTo}
+                      className="nav-link text-center"
+                      activeClassName="active"
+                      exact
+                    >
+                      {item.navitem}
+                    </NavLink>
+                  )}
                 </li>
               ))}
             </ul>

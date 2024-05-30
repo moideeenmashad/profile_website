@@ -16,7 +16,7 @@ h1 {
   font-size: 60px;
   margin: 0;
 }
-.category_title {
+.category_title, .sub_title {
   margin: 0;
   font-size: x-large;
 }
@@ -62,7 +62,7 @@ h1 {
 /* page 404 */
 .page404_body {
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
 }
 .page404_content {
   padding: 12px;
