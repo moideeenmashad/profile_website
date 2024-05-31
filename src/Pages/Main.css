@@ -16,7 +16,7 @@ h1 {
   font-size: 60px;
   margin: 0;
 }
-.category_title, .sub_title {
+.category_title {
   margin: 0;
   font-size: x-large;
 }
@@ -97,6 +97,12 @@ h1 {
   justify-content: center;
 }
 
+/* About me */
+.sub_title {
+  font-size: xx-large;
+  font-weight: bold;
+  /* color: #75b2eb; */
+}
 /* Media Screens */
 /* Extra small devices  */
 @media only screen and (max-width: 600px) {
