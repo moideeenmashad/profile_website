@@ -14,10 +14,8 @@ h1 {
 }
 .title {
   font-size: 60px;
-  margin: 0;
 }
 .category_title {
-  margin: 0;
   font-size: x-large;
 }
 .para {
@@ -64,9 +62,9 @@ h1 {
   background-size: cover;
   height: 100vh;
 }
-.page404_content {
+/* .page404_content {
   padding: 12px;
-}
+} */
 .page404_container {
   display: flex;
   justify-content: center;
@@ -80,7 +78,6 @@ h1 {
   text-align: center;
 }
 .http_respond_sub_title {
-  margin-top: 16px;
   font-size: 26px;
   text-align: center;
 }
@@ -88,16 +85,17 @@ h1 {
   text-align: center;
   padding-left: 16px;
   padding-right: 16px;
-  margin-top: 16px;
 }
 .buttons {
-  margin-top: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 /* About me */
+.about_bg {
+  background-color: #ffffff;
+}
 .sub_title {
   font-size: xx-large;
   font-weight: bold;
@@ -111,11 +109,15 @@ h1 {
   }
   .introduction_bg {
     height: 90vh;
+    /* background-image: url(../Assets/img/introduction_sm_bg.jpg) !important ; */
+    background-color: #ffffff;
   }
 }
 /* Medium devices  */
 @media only screen and (min-width: 768px) and (max-width: 900px) {
   .introduction_bg {
+    /* background-image: url(../Assets/img/introduction_md_bg.jpg) !important ; */
+    background-color: #ffffff;
     height: 60vh;
   }
 }
@@ -123,5 +125,7 @@ h1 {
 @media only screen and (min-width: 1200px) {
   .introduction_bg {
     height: 100vh;
+    /* background-image: url(../Assets/img/introduction-bg.jpg) !important ; */
+    background-color: #ffffff;
   }
 }

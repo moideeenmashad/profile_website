@@ -1,5 +1,7 @@
 /* index.css */
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import "Assets/Theme/Dark.css";
+@import "Assets/Theme/Style.css";
 
 @font-face {
   font-family: "Nevis";
@@ -9,5 +11,3 @@
 body {
   font-family: "Nevis", sans-serif;
 }
-
-/* Social Media Icons */

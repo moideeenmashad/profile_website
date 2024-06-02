@@ -94,30 +94,44 @@ body.dark-mode .page404_body {
 
 @media only screen and (max-width: 600px) {
   body.dark-mode .introduction_bg {
-    background-image: url(../../Assets/img/introduction_sm_dark_bg.jpg) !important ;
+    /* background-image: url(../../Assets/img/introduction_sm_dark_bg.jpg) !important ; */
+    background-color: #1a1a1a;
   }
   body.light-mode .introduction_bg {
-    background-image: url(../../Assets/img/introduction_sm_bg.jpg) !important ;
+    /* background-image: url(../../Assets/img/introduction_sm_bg.jpg) !important ; */
+    background-color: #ffffff;
+  }
+  body.dark-mode .about_bg {
+    background-color: #1a1a1a;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 900px) {
   body.dark-mode .introduction_bg {
-    background-image: url(../../Assets/img/introduction_md_dark_bg.jpg) !important ;
+    /* background-image: url(../../Assets/img/introduction_md_dark_bg.jpg) !important ; */
+    background-color: #1a1a1a;
   }
   body.light-mode .introduction_bg {
-    background-image: url(../../Assets/img/introduction_md_bg.jpg) !important ;
+    /* background-image: url(../../Assets/img/introduction_md_bg.jpg) !important ; */
+    background-color: #ffffff;
+  }
+  body.dark-mode .about_bg {
+    background-color: #1a1a1a;
   }
 }
 
 /* Large screen dark mode */
 @media only screen and (min-width: 1200px) {
   body.dark-mode .introduction_bg {
-    background-image: url(../../Assets/img/introduction_dark_bg.jpg) !important;
+    /* background-image: url(../../Assets/img/introduction_dark_bg.jpg) !important; */
+    background-color: #1a1a1a;
   }
-
   body.light-mode .introduction_bg {
-    background-image: url(../../Assets/img/introduction-bg.jpg) !important;
+    /* background-image: url(../../Assets/img/introduction-bg.jpg) !important; */
+    background-color: #ffffff;
+  }
+  body.dark-mode .about_bg {
+    background-color: #1a1a1a;
   }
 }

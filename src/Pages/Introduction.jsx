@@ -13,44 +13,58 @@ const Introduction = () => {
   };
   return (
     <div className="introduction_bg">
-      <div className="container sm_container_mg">
-        <div className="row align-items-center">
-          <div className="col-12 col-md-12 col-lg-6">
-            <h1 className="title text-color">{userData && userData.name}</h1>
-            <h6 className="category_title text-color">{userData && userData.job_role}</h6>
-            <p className="para text-color">{userData && userData.description}</p>
-            <div className="d-flex">
-              <DownloadButton />
-              <div className="social_media mx-2">
-                {userSocialProfile &&
-                  userSocialProfile
-                    .filter(
-                      (item) =>
-                        item.title === "GitHub" ||
-                        item.title === "LinkedIn" ||
-                        item.title === "Email"
-                    )
-                    .map((item, index) => (
-                      <a
-                        key={index}
-                        href={item.LinkTo}
-                        className="btn_outline_primary social_media_icon align-items-center me-2"
-                        target="_blank"
-                        data-toggle="tooltip"
-                        title={item.title}
-                      >
-                        {socialMediaIcons[item.iconId]}
-                      </a>
-                    ))}
+      <div className="container sm_container_mg ">
+        <div className="intoduction_brief_container">
+          <div className="row align-items-center mb-24">
+            <div className="col-12 col-md-12 col-lg-6">
+              <h1 className="title text-color">{userData && userData.name}</h1>
+              <h6 className="category_title text-color">
+                {userData && userData.job_role}
+              </h6>
+              <p className="para text-color">
+                {userData && userData.description}
+              </p>
+              <div className="d-flex">
+                <DownloadButton />
+                <div className="social_media mx-2">
+                  {userSocialProfile &&
+                    userSocialProfile
+                      .filter(
+                        (item) =>
+                          item.title === "GitHub" ||
+                          item.title === "LinkedIn" ||
+                          item.title === "Email"
+                      )
+                      .map((item, index) => (
+                        <a
+                          key={index}
+                          href={item.LinkTo}
+                          className="btn_outline_primary social_media_icon align-items-center me-2"
+                          target="_blank"
+                          data-toggle="tooltip"
+                          title={item.title}
+                        >
+                          {socialMediaIcons[item.iconId]}
+                        </a>
+                      ))}
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-12 col-md-12 col-lg-6 d-none d-lg-block">
-            {/* <div className="card">
+            <div className="col-12 col-md-12 col-lg-6 d-none d-lg-block">
+              {/* <div className="card">
               <div className="card-body"></div>
             </div> */}
+            </div>
           </div>
         </div>
+        {/* <div className="tech_stack_container">
+          <div className="row g-3">
+            <div className="col-12 col-md-6 col-lg-3">Hello</div>
+            <div className="col-12 col-md-6 col-lg-3">Hello</div>
+            <div className="col-12 col-md-6 col-lg-3">Hello</div>
+            <div className="col-12 col-md-6 col-lg-3">Hello</div>
+          </div>
+        </div> */}
       </div>
     </div>
   );

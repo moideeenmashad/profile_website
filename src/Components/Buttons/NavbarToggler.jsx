@@ -4,7 +4,7 @@ import { HiMenuAlt2 } from "react-icons/hi";
 const NavbarToggler = () => {
   return (
     <button
-      className="navbar-toggler"
+      className="navbar-toggler btn_primary"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarNavDropdown"
