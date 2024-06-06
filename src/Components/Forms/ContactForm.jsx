@@ -1,33 +1,70 @@
-import React from "react";
-import { useForm } from "react-hook-form";
+import React, { useState } from "react";
 import axios from "axios";
 
 const ContactForm = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [errors, setErrors] = useState({});
+  const [submissionResult, setSubmissionResult] = useState(null);
 
-  const onSubmit = (data) => {
-    axios
-      .post("https://formspree.io/f/xleqyvgv", data)
-      .then((response) => {
-        if (response.status === 200) {
-          alert("Message Sent!");
-        } else {
-          alert("An error occurred, please try again.");
-        }
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-        alert("An error occurred, please try again.");
-      });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+    const nameRegex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!formData.name) {
+      newErrors.name = "Name is required";
+    } else if (!nameRegex.test(formData.name)) {
+      newErrors.name = "Invalid name format";
+    }
+
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+    } else if (!emailRegex.test(formData.email)) {
+      newErrors.email = "Invalid email format";
+    }
+
+    return newErrors;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const newErrors = validateForm();
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+    } else {
+      setErrors({});
+      axios
+        .post("https://formspree.io/f/xleqyvgv", formData)
+        .then((response) => {
+          if (response.status === 200) {
+            setSubmissionResult("Message Sent!");
+            alert("messege sent");
+          } else {
+            setSubmissionResult("An error occurred, please try again.");
+          }
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          setSubmissionResult("An error occurred, please try again.");
+        });
+    }
   };
 
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form onSubmit={handleSubmit}>
         <div className="row g-3">
           <div className="col-12">
             <label htmlFor="name" className="form-label">
@@ -37,16 +74,14 @@ const ContactForm = () => {
               type="text"
               className={`form-control ${errors.name ? "is-invalid" : ""}`}
               id="name"
-              {...register("name", {
-                required: "Name is required",
-                pattern: {
-                  value: /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/,
-                  message: "Invalid name format",
-                },
-              })}
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              style={{ borderColor: errors.email ? "red" : "" }}
+              required
             />
             {errors.name && (
-              <div className="invalid-feedback">{errors.name.message}</div>
+              <div className="invalid-feedback">{errors.name}</div>
             )}
           </div>
           <div className="col-12">
@@ -57,16 +92,14 @@ const ContactForm = () => {
               type="email"
               className={`form-control ${errors.email ? "is-invalid" : ""}`}
               id="email"
-              {...register("email", {
-                required: "Email is required",
-                pattern: {
-                  value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                  message: "Invalid email format",
-                },
-              })}
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              style={{ borderColor: errors.email ? "red" : "" }}
+              required
             />
             {errors.email && (
-              <div className="invalid-feedback">{errors.email.message}</div>
+              <div className="invalid-feedback">{errors.email}</div>
             )}
           </div>
           <div className="col-12">
@@ -76,7 +109,9 @@ const ContactForm = () => {
             <textarea
               className="form-control"
               id="message"
-              {...register("message")}
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
             />
           </div>
         </div>
@@ -84,6 +119,11 @@ const ContactForm = () => {
           Submit
         </button>
       </form>
+      {submissionResult && (
+        <div className="mt-3">
+          <p>{submissionResult}</p>
+        </div>
+      )}
     </>
   );
 };
