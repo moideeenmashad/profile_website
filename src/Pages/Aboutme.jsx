@@ -12,7 +12,7 @@ const Aboutme = () => {
               {/* <img src={userImg} alt="" className="img-fluid" /> */}
             </div>
             <div className="col-12 col-md-6 col-lg-6">
-              <h6 className="sub_title mb-16">About Me</h6>
+              <h6 className="sub_title mb-16">About</h6>
               <p className="category_title mb-12">
                 {userData && userData.job_role}
               </p>
