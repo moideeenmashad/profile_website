@@ -11,7 +11,7 @@ const ContactForm = () => {
 
   const onSubmit = (data) => {
     axios
-      .post("https://formspree.io/YOUR_FORM_ID", data)
+      .post("https://formspree.io/f/xleqyvgv", data)
       .then((response) => {
         if (response.status === 200) {
           alert("Message Sent!");
