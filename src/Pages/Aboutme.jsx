@@ -1,6 +1,7 @@
 import React from "react";
 import "./Main.css";
 import userData from "../Utils/user_data.json";
+// import aboutImg from "../Assets/img/about_me.png";
 const Aboutme = () => {
   return (
     <>
@@ -9,7 +10,9 @@ const Aboutme = () => {
           <div className="row align-items-center">
             <div className="col-12 col-md-6 col-lg-6">
               {/* add image here */}
-              {/* <img src={userImg} alt="" className="img-fluid" /> */}
+              {/* <div className="d-flex justify-content-center">
+                <img src={aboutImg} alt="" className="img-fluid" />
+              </div> */}
             </div>
             <div className="col-12 col-md-6 col-lg-6">
               <h6 className="sub_title mb-16">About</h6>

@@ -72,7 +72,9 @@ const ContactForm = () => {
             </label>
             <input
               type="text"
-              className={`form-control ${errors.name ? "is-invalid" : ""}`}
+              className={`form-control ${
+                errors.name ? "is-invalid invalid-input" : "valid-input"
+              }`}
               id="name"
               name="name"
               value={formData.name}
@@ -90,7 +92,9 @@ const ContactForm = () => {
             </label>
             <input
               type="email"
-              className={`form-control ${errors.email ? "is-invalid" : ""}`}
+              className={`form-control ${
+                errors.email ? "is-invalid invalid-input" : "valid-input"
+              }`}
               id="email"
               name="email"
               value={formData.email}
