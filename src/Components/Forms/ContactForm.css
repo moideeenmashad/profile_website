@@ -1,0 +1,9 @@
+input[type="email"] {
+  text-transform: lowercase;
+}
+.invalid-input {
+  border: 2px solid red;
+}
+.valid-input{
+    border: 2px solid rgb(2, 176, 2);
+}
