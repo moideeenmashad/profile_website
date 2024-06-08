@@ -1,8 +1,8 @@
 import React from "react";
-import "../Assets/Theme/Dark.css";
+import "@/Assets/Theme/Dark.css";
 import "./Main.css";
-import Navbar from "../Layouts/Navbar/Navbar";
-import BackToHome from "../Components/Buttons/BackToHome";
+import Navbar from "@/Layouts/Navbar/Navbar";
+import BackToHome from "@/Components/Buttons/BackToHome";
 
 const Page404 = () => {
   return (

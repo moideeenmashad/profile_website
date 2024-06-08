@@ -1,7 +1,7 @@
 import React from "react";
 import "./Main.css";
-import userData from "../Utils/user_data.json";
-// import aboutImg from "../Assets/img/about_me.png";
+import userData from "@/Utils/user_data.json";
+// import aboutImg from "@/Assets/img/about_me.png";
 const Aboutme = () => {
   return (
     <>

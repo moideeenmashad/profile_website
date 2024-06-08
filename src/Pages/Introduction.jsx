@@ -1,9 +1,9 @@
 import "./Main.css";
-import DownloadButton from "../Components/Buttons/DownloadButton";
+import DownloadButton from "@/Components/Buttons/DownloadButton";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoGithub, IoMail } from "react-icons/io5";
-import userData from "../Utils/user_data.json";
-import userSocialProfile from "../Utils/user_social_media_link.json";
+import userData from "@/Utils/user_data.json";
+import userSocialProfile from "@/Utils/user_social_media_link.json";
 
 const Introduction = () => {
   const socialMediaIcons = {

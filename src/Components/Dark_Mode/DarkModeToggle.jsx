@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../Assets/Theme/Dark.css";
+import "@/Assets/Theme/Dark.css";
 import { IoSunny } from "react-icons/io5";
 import { FaMoon } from "react-icons/fa";
 

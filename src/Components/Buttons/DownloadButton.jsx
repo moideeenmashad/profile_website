@@ -1,6 +1,6 @@
 import React from 'react'
 import './Button.css'
-// import cv from "../../Assets/document/"
+// import cv from "@/Assets/document/"
 
 const DownloadButton = () => {
     const getCV = () => {
