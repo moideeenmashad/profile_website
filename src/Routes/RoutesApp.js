@@ -1,18 +1,19 @@
-import Main from "../Pages/Main";
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Main from "../Pages/Main";
 import Page404 from "../Pages/Page404";
 
-function App() {
+const RoutesApp = () => {
   return (
     <>
       <BrowserRouter>
         <Routes>
           <Route path="/" exact element={<Main />} />
-          <Route path="*" exact element={<Page404/>}/>
+          <Route path="*" exact element={<Page404 />} />
         </Routes>
       </BrowserRouter>
     </>
   );
-}
+};
 
-export default App;
+export default RoutesApp;
