@@ -22,7 +22,7 @@
 }
 
 .dark-mode .scroll-to-top {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 .dark-mode .icon_up {
   color: #1a1a1a;
@@ -90,6 +90,11 @@ body.dark-mode .page404_body {
       transparent 12px
     ),
     linear-gradient(90deg, rgb(26, 26, 26), rgb(26, 26, 26));
+}
+
+/* scroll up */
+.light-mode{
+  background-color: #1a1a1a !important;
 }
 
 @media only screen and (max-width: 600px) {

@@ -1,6 +1,7 @@
 import React from "react";
 import ScrollToTop from "react-scroll-to-top";
 import { IoArrowUp } from "react-icons/io5";
+import "@/Assets/Theme/Dark.css";
 import "./ScrollUp.css";
 
 const ScrollUp = () => {

@@ -4,6 +4,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoGithub, IoMail } from "react-icons/io5";
 import userData from "@/Utils/user_data.json";
 import userSocialProfile from "@/Utils/user_social_media_link.json";
+import { SiHtml5, SiCss3, SiBootstrap, SiJavascript } from "react-icons/si";
 
 const Introduction = () => {
   const socialMediaIcons = {
@@ -15,7 +16,7 @@ const Introduction = () => {
     <div className="introduction_bg">
       <div className="container sm_container_mg ">
         <div className="intoduction_brief_container">
-          <div className="row align-items-center mb-24">
+          <div className="row align-items-center mb-56">
             <div className="col-12 col-md-12 col-lg-6">
               <h1 className="title text-color">{userData && userData.name}</h1>
               <h6 className="category_title text-color">
@@ -56,15 +57,26 @@ const Introduction = () => {
             </div> */}
             </div>
           </div>
-        </div>
-        {/* <div className="tech_stack_container">
-          <div className="row g-3">
-            <div className="col-12 col-md-6 col-lg-3">Hello</div>
-            <div className="col-12 col-md-6 col-lg-3">Hello</div>
-            <div className="col-12 col-md-6 col-lg-3">Hello</div>
-            <div className="col-12 col-md-6 col-lg-3">Hello</div>
+          <div className="tech_stack_container">
+            <div className="row g-3 align-items-center">
+              <div className="col-12 col-md-6 col-lg-3">
+                <h6 className=" mb-16">Tech Stack</h6>
+              </div>
+              <div className="col-12 col-md-6 col-lg-3">
+                <SiHtml5 />
+              </div>
+              <div className="col-12 col-md-6 col-lg-3">
+                <SiCss3 />
+              </div>
+              <div className="col-12 col-md-6 col-lg-3">
+                <SiBootstrap />
+              </div>
+              <div className="col-12 col-md-6 col-lg-3">
+                <SiJavascript />
+              </div>
+            </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );
