@@ -93,8 +93,12 @@ body.dark-mode .page404_body {
 }
 
 /* scroll up */
-.light-mode{
+.light-mode {
   background-color: #1a1a1a !important;
+}
+
+.dark-mode .vl {
+  border-color: #ffffff;
 }
 
 @media only screen and (max-width: 600px) {
