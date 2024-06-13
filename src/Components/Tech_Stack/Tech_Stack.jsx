@@ -36,7 +36,7 @@ const Tech_Stack = () => {
         </div>
         {frontendTools.map((value, key) => {
           return (
-            <div className="col-3 col-md-2 col-lg-1 justify-content-center">
+            <div className="col-2 col-md-2 col-lg-1 justify-content-center">
               <span className="tech_stack_icon">{value.techIcon}</span>
             </div>
           );
