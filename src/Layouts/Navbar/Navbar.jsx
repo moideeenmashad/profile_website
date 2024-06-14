@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import "./Navbar.css";
 import ContactButton from "@/Components/Buttons/ContactButton";
 import Profile_img from "@/Assets/img/profile.jpg";
@@ -9,11 +9,11 @@ import DarkModeToggle from "@/Components/Dark_Mode/DarkModeToggle";
 
 const Navbar = () => {
   const navItems = [
-    { navitem: "Home", LinkTo: "/", className: "nav-item" },
+    { navitem: "Home", LinkTo: "home", className: "nav-item" },
     { navitem: "About", LinkTo: "aboutMe", className: "nav-item" },
     { navitem: "Projects", LinkTo: "projects", className: "nav-item" },
     { navitem: "Blog", LinkTo: "/blog", className: "nav-item" },
-    { navitem: "contact", LinkTo: "/contact", className: "nav-item d-lg-none" },
+    { navitem: "Contact", LinkTo: "/contact", className: "nav-item d-lg-none" },
   ];
 
   return (
@@ -41,16 +41,7 @@ const Navbar = () => {
             <ul className="navbar-nav ms-auto">
               {navItems.map((item, index) => (
                 <li key={index} className={item.className}>
-                  {item.navitem === "About" || item.navitem === "Projects" ? (
-                    <Link
-                      to={item.LinkTo}
-                      smooth={true}
-                      duration={100}
-                      className="nav-link text-center"
-                    >
-                      {item.navitem}
-                    </Link>
-                  ) : (
+                  {item.navitem === "Blog"? (
                     <NavLink
                       to={item.LinkTo}
                       className="nav-link text-center"
@@ -59,6 +50,17 @@ const Navbar = () => {
                     >
                       {item.navitem}
                     </NavLink>
+                  ) : (
+                    <ScrollLink
+                      to={item.LinkTo}
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      activeClass="active"
+                      className="nav-link text-center"
+                    >
+                      {item.navitem}
+                    </ScrollLink>
                   )}
                 </li>
               ))}
@@ -66,7 +68,7 @@ const Navbar = () => {
             <div className="d-none d-lg-block">
               <DarkModeToggle />
             </div>
-            <ul className="navbar-nav  d-none d-lg-flex">
+            <ul className="navbar-nav d-none d-lg-flex">
               <li className="nav-item">
                 <ContactButton />
               </li>

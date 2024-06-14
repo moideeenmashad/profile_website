@@ -13,7 +13,7 @@ const Introduction = () => {
     email: <IoMail />,
   };
   return (
-    <div className="introduction_bg">
+    <div className="introduction_bg" id="home">
       <div className="container sm_container_mg ">
         <div className="intoduction_brief_container">
           <div className="row align-items-center mb-56">

@@ -7,7 +7,7 @@ const Aboutme = () => {
     <>
       <div className="about_bg" id="aboutMe">
         <div className="container">
-          <div className="row align-items-center">
+          <div className="row">
             <div className="col-12 col-md-6 col-lg-6">
               {/* add image here */}
               {/* <div className="d-flex justify-content-center">
