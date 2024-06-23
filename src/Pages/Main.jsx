@@ -5,6 +5,7 @@ import Navbar from "@/Layouts/Navbar/Navbar";
 import ProgressBar from "@/Components/Progress_Bar/ProgressBar";
 import Aboutme from "./Aboutme";
 import Project from "./Project";
+import Contactme from "./Contactme";
 // import Alert from "@/Components/Alert/Alert";
 const Main = () => {
   return (
@@ -15,6 +16,7 @@ const Main = () => {
       {/* <Alert /> */}
       <Aboutme />
       <Project />
+      <Contactme />
       <ScrollUp />
     </>
   );

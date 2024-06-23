@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import "./Navbar.css";
-import ContactButton from "@/Components/Buttons/ContactButton";
 import Profile_img from "@/Assets/img/profile.jpg";
 import NavbarToggler from "@/Components/Buttons/NavbarToggler";
 import DarkModeToggle from "@/Components/Dark_Mode/DarkModeToggle";
@@ -11,9 +10,9 @@ const Navbar = () => {
   const navItems = [
     { navitem: "Home", LinkTo: "home", className: "nav-item" },
     { navitem: "About", LinkTo: "aboutMe", className: "nav-item" },
-    { navitem: "Projects", LinkTo: "projects", className: "nav-item" },
+    { navitem: "Project", LinkTo: "projects", className: "nav-item" },
+    { navitem: "Contact", LinkTo: "contact", className: "nav-item" },
     { navitem: "Blog", LinkTo: "/blog", className: "nav-item" },
-    { navitem: "Contact", LinkTo: "/contact", className: "nav-item d-lg-none" },
   ];
 
   return (
@@ -41,7 +40,7 @@ const Navbar = () => {
             <ul className="navbar-nav ms-auto">
               {navItems.map((item, index) => (
                 <li key={index} className={item.className}>
-                  {item.navitem === "Blog"? (
+                  {item.navitem === "Blog" ? (
                     <NavLink
                       to={item.LinkTo}
                       className="nav-link text-center"
@@ -68,11 +67,6 @@ const Navbar = () => {
             <div className="d-none d-lg-block">
               <DarkModeToggle />
             </div>
-            <ul className="navbar-nav d-none d-lg-flex">
-              <li className="nav-item">
-                <ContactButton />
-              </li>
-            </ul>
           </div>
         </div>
       </nav>

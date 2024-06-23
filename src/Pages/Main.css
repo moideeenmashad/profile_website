@@ -94,7 +94,7 @@ h1 {
 
 /* About me */
 .about_bg {
-  background-color: #ffffff;
+  background-color: rgb(248 249 249);
   display: flex;
   align-items: center;
   min-height: 50vh;
@@ -107,10 +107,19 @@ h1 {
 
 /* Project Section */
 .project_bg {
-  background-color: rgb(248 249 249);
+  background-color: #ffffff;
   height: 50vh;
   display: flex;
   align-items: center;
+}
+
+/* Contactme section */
+.contactme_bg {
+  height: 100vh !important;
+  background-color: rgb(248 249 249);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Media Screens */
