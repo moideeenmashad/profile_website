@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import "./Navbar.css";
 import Profile_img from "@/Assets/img/profile.jpg";
@@ -40,27 +39,16 @@ const Navbar = () => {
             <ul className="navbar-nav ms-auto">
               {navItems.map((item, index) => (
                 <li key={index} className={item.className}>
-                  {item.navitem === "Blog" ? (
-                    <NavLink
-                      to={item.LinkTo}
-                      className="nav-link text-center"
-                      activeClassName="active"
-                      exact
-                    >
-                      {item.navitem}
-                    </NavLink>
-                  ) : (
-                    <ScrollLink
-                      to={item.LinkTo}
-                      smooth={true}
-                      duration={500}
-                      spy={true}
-                      activeClass="active"
-                      className="nav-link text-center"
-                    >
-                      {item.navitem}
-                    </ScrollLink>
-                  )}
+                  <ScrollLink
+                    to={item.LinkTo}
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    activeClass="active"
+                    className="nav-link text-center"
+                  >
+                    {item.navitem}
+                  </ScrollLink>
                 </li>
               ))}
             </ul>
