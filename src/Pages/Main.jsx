@@ -6,6 +6,7 @@ import ProgressBar from "@/Components/Progress_Bar/ProgressBar";
 import Aboutme from "./Aboutme";
 import Project from "./Project";
 import Contactme from "./Contactme";
+import Footer from "@/Layouts/Footer/Footer";
 const Main = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const Main = () => {
       <Project />
       <Contactme />
       <ScrollUp />
+      <Footer />
     </>
   );
 };

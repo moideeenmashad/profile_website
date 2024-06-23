@@ -7,7 +7,7 @@ const Contactme = () => {
     <>
       <div className="contactme_bg" id="contact">
         <div className="container">
-          <div className="row">
+          <div className="row g-3">
             <div className="col-12 col-sm-12 col-md-6 col-lg-6">
               <h6 className="sub_title">Let's Talk</h6>
               <p>
