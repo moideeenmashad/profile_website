@@ -104,13 +104,15 @@ body.dark-mode .page404_body {
 
 @media only screen and (max-width: 600px) {
   body.dark-mode .introduction_bg,
-  body.dark-mode .project_bg {
+  body.dark-mode .project_bg,
+  body.dark-mode .footer_bg {
     background-color: #1a1a1a;
   }
   body.dark-mode .contactme_bg,
   body.dark-mode .about_bg {
     background-color: #282828 !important;
   }
+  body.light-mode .footer_bg,
   body.light-mode .introduction_bg {
     background-color: #ffffff;
   }
@@ -119,13 +121,15 @@ body.dark-mode .page404_body {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 900px) {
   body.dark-mode .introduction_bg,
-  body.dark-mode .project_bg {
+  body.dark-mode .project_bg,
+  body.dark-mode .footer_bg {
     background-color: #1a1a1a;
   }
   body.dark-mode .contactme_bg,
   body.dark-mode .about_bg {
     background-color: #282828 !important;
   }
+  body.light-mode .footer_bg,
   body.light-mode .introduction_bg {
     background-color: #ffffff;
   }
@@ -134,13 +138,15 @@ body.dark-mode .page404_body {
 /* Large screen dark mode */
 @media only screen and (min-width: 1200px) {
   body.dark-mode .introduction_bg,
-  body.dark-mode .project_bg {
+  body.dark-mode .project_bg,
+  body.dark-mode .footer_bg {
     background-color: #1a1a1a;
   }
   body.dark-mode .contactme_bg,
   body.dark-mode .about_bg {
     background-color: #282828 !important;
   }
+  body.light-mode .footer_bg,
   body.light-mode .introduction_bg {
     background-color: #ffffff;
   }

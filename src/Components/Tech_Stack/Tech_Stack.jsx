@@ -1,6 +1,8 @@
 import React from "react";
 import "./Tech_Stack.css";
 import "@/Assets/Theme/Dark.css";
+import Marquee from "react-fast-marquee";
+import { useMediaQuery } from "react-responsive";
 import {
   SiHtml5,
   SiCss3,
@@ -26,22 +28,38 @@ const frontendTools = [
 ];
 
 const Tech_Stack = () => {
+  const isMobileOrTablet = useMediaQuery({ query: "(max-width: 768px)" });
+
   return (
-    <div className="row g-3 align-items-center">
+    <div className="row g-3 align-items-center tech_stack_container">
       <div className="col-4 col-md-3 col-lg-2">
         <div className="d-flex align-items-center">
           <h6 className="me-16">Tech Stack</h6>
           <div className="vl"></div>
         </div>
       </div>
-      {frontendTools.map((tool) => (
-        <div
-          key={tool.id}
-          className="col-2 col-md-2 col-lg-1 justify-content-center"
-        >
-          <span className="tech_stack_icon">{tool.techIcon}</span>
-        </div>
-      ))}
+      <div className="col-8">
+        {isMobileOrTablet ? (
+          <Marquee gradient={false} speed={50}>
+            {frontendTools.map((tool) => (
+              <span key={tool.id} className="tech_stack_icon me-3">
+                {tool.techIcon}
+              </span>
+            ))}
+          </Marquee>
+        ) : (
+          <div className="row">
+            {frontendTools.map((tool) => (
+              <div
+                key={tool.id}
+                className="col-2 col-md-2 col-lg-1 justify-content-center"
+              >
+                <span className="tech_stack_icon">{tool.techIcon}</span>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 };
