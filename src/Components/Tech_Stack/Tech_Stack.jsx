@@ -28,7 +28,7 @@ const frontendTools = [
 ];
 
 const Tech_Stack = () => {
-  const isMobileOrTablet = useMediaQuery({ query: "(max-width: 768px)" });
+  const isMobileOrTablet = useMediaQuery({ query: "(max-width: 850px)" });
 
   return (
     <div className="row g-3 align-items-center tech_stack_container">
