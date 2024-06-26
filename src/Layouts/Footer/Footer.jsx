@@ -4,15 +4,16 @@ import { Link as ScrollLink } from "react-scroll";
 import { FaLinkedinIn, FaStackOverflow, FaInstagram } from "react-icons/fa";
 import { IoLogoGithub, IoMail } from "react-icons/io5";
 import userSocialProfile from "@/Utils/user_social_media_link.json";
-const socialMediaIcons = {
-  linkedin: <FaLinkedinIn />,
-  github: <IoLogoGithub />,
-  email: <IoMail />,
-  stack_overflow: <FaStackOverflow />,
-  instagram: <FaInstagram />,
-};
+import userData from "@/Utils/user_data.json";
 
 const Footer = () => {
+  const socialMediaIcons = {
+    linkedin: <FaLinkedinIn />,
+    github: <IoLogoGithub />,
+    email: <IoMail />,
+    stack_overflow: <FaStackOverflow />,
+    instagram: <FaInstagram />,
+  };
   const navItems = [
     { navitem: "Home", LinkTo: "home", className: "nav-item me-3" },
     { navitem: "About", LinkTo: "aboutMe", className: "nav-item me-3" },
@@ -26,6 +27,7 @@ const Footer = () => {
       <footer className="footer_bg" id="footer">
         <div className="container">
           <div className="footer_body">
+            {/* sections */}
             <div className="row justify-content-center align-items-center">
               {navItems.map((item, index) => (
                 <div
@@ -48,7 +50,7 @@ const Footer = () => {
             </div>
             <hr />
             {/* social links */}
-            <div className="d-flex justify-content-center align-items-center">
+            <div className="d-flex justify-content-center align-items-center mb-24">
               {userSocialProfile &&
                 userSocialProfile.map((item, index) => (
                   <a
@@ -63,6 +65,11 @@ const Footer = () => {
                   </a>
                 ))}
             </div>
+            {/* credits */}
+            <p className="text-center">
+              &copy; {new Date().getFullYear()} {userData && userData.name}. All
+              rights reserved.
+            </p>
           </div>
         </div>
       </footer>

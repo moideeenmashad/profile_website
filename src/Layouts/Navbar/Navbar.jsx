@@ -11,7 +11,7 @@ const Navbar = () => {
     { navitem: "About", LinkTo: "aboutMe", className: "nav-item" },
     { navitem: "Project", LinkTo: "projects", className: "nav-item" },
     { navitem: "Contact", LinkTo: "contact", className: "nav-item" },
-    { navitem: "Blog", LinkTo: "/blog", className: "nav-item" },
+    // { navitem: "Blog", LinkTo: "/blog", className: "nav-item" },
   ];
 
   return (

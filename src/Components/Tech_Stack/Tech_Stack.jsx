@@ -40,7 +40,7 @@ const Tech_Stack = () => {
       </div>
       <div className="col-8">
         {isMobileOrTablet ? (
-          <Marquee gradient={false} speed={50}>
+          <Marquee gradient={false} speed={40}>
             {frontendTools.map((tool) => (
               <span key={tool.id} className="tech_stack_icon me-3">
                 {tool.techIcon}
