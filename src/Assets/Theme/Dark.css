@@ -21,7 +21,6 @@
   border: 2px solid #1a1a1a;
   background-color: #ffffff;
 }
-
 .dark-mode .scroll-to-top {
   background-color: #ffffff !important;
 }
@@ -91,6 +90,14 @@ body.dark-mode .page404_body {
       transparent 12px
     ),
     linear-gradient(90deg, rgb(26, 26, 26), rgb(26, 26, 26));
+}
+
+/* footer section */
+body.light-mode .text_color {
+  color: #1a1a1a !important;
+}
+body.dark-mode .text_color {
+  color: #ffffff !important;
 }
 
 /* scroll up */

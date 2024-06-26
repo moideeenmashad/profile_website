@@ -25,10 +25,13 @@ const Footer = () => {
     <>
       <footer className="footer_bg" id="footer">
         <div className="container">
-          <div className="" style={{ border: "2px solid red" }}>
-            <div className="row justify-content-center">
+          <div className="footer_body">
+            <div className="row justify-content-center align-items-center">
               {navItems.map((item, index) => (
-                <div className="col-2 col-md-2 col-lg-1" key={index}>
+                <div
+                  className="col-2 col-md-2 col-lg-1 d-flex align-items-center"
+                  key={index}
+                >
                   <span className={item.className}>
                     <ScrollLink
                       to={item.LinkTo}
@@ -51,7 +54,7 @@ const Footer = () => {
                   <a
                     key={index}
                     href={item.LinkTo}
-                    className="social_media_icon align-items-center me-3"
+                    className="social_media_icon text_color me-3"
                     target="_blank"
                     data-toggle="tooltip"
                     title={item.title}
