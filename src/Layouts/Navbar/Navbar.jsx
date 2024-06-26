@@ -4,6 +4,7 @@ import "./Navbar.css";
 import Profile_img from "@/Assets/img/profile.jpg";
 import NavbarToggler from "@/Components/Buttons/NavbarToggler";
 import DarkModeToggle from "@/Components/Dark_Mode/DarkModeToggle";
+import OnDevelopment from "@/Components/On_Development/OnDevelopment";
 
 const Navbar = () => {
   const navItems = [
@@ -16,48 +17,51 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar sticky-top navbar-expand-lg bg-body-tertiary">
-        <div className="container">
-          <div className="profile_section">
-            <img
-              src={Profile_img}
-              className="img-fluid rounded-circle profile-image"
-              alt="Profile Image"
-            />
-            <a className="navbar-brand" href="#">
-              Moideen Mashad
-            </a>
-          </div>
-          <div className="d-flex justify-content-end">
-            <div className="d-md-block d-lg-none">
-              <DarkModeToggle />
+      <div className="sticky-top">
+        <OnDevelopment />
+        <nav className="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+          <div className="container">
+            <div className="profile_section">
+              <img
+                src={Profile_img}
+                className="img-fluid rounded-circle profile-image"
+                alt="Profile Image"
+              />
+              <a className="navbar-brand" href="#">
+                Moideen Mashad
+              </a>
             </div>
-            <NavbarToggler />
-          </div>
+            <div className="d-flex justify-content-end">
+              <div className="d-md-block d-lg-none">
+                <DarkModeToggle />
+              </div>
+              <NavbarToggler />
+            </div>
 
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav ms-auto">
-              {navItems.map((item, index) => (
-                <li key={index} className={item.className}>
-                  <ScrollLink
-                    to={item.LinkTo}
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    activeClass="active"
-                    className="nav-link text-center"
-                  >
-                    {item.navitem}
-                  </ScrollLink>
-                </li>
-              ))}
-            </ul>
-            <div className="d-none d-lg-block">
-              <DarkModeToggle />
+            <div className="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul className="navbar-nav ms-auto">
+                {navItems.map((item, index) => (
+                  <li key={index} className={item.className}>
+                    <ScrollLink
+                      to={item.LinkTo}
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      activeClass="active"
+                      className="nav-link text-center"
+                    >
+                      {item.navitem}
+                    </ScrollLink>
+                  </li>
+                ))}
+              </ul>
+              <div className="d-none d-lg-block">
+                <DarkModeToggle />
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </>
   );
 };
